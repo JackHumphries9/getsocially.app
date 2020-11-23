@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/JackHumphries9/Socially">
-    <img src="/assets/icons/app-icons/png/1024x1024.png" alt="Logo" width="80" height="80">
+    <img src="/public/assets/img/favicons/android-chrome-512x512.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">getsocially.app</h3>
