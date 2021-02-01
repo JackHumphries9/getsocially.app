@@ -15,7 +15,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is the entire source code for the website [getsocially.app](https://getsocially.app). This site is deployed serverlessly using [Vercel](https://vercel.com)
+This is the entire source code for the website [getsocially.app](https://getsocially.app). This site is deployed serverlessly using [Vercel](https://vercel.com). When a change is pushed to this repository, Vercel will redeploy the website.
 
 ## License
 
@@ -28,6 +28,6 @@ Distributed under the GNU General Public License v3.0 License. See `LICENSE` for
 
 Your Name - [@JackPHumphries](https://twitter.com/JackPHumphries) - me@jackhumphries.co.uk
 
-Socially Link Link: [https://github.com/JackHumphries9/Socially](https://github.com/JackHumphries9/Socially)
+Socially Link: [https://github.com/JackHumphries9/Socially](https://github.com/JackHumphries9/Socially)
 
 Website Link: [https://getsocially.app](https://getsocially.app)
