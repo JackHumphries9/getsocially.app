@@ -11,9 +11,11 @@
     The website for Socially.
   </p>
   <div align="center">
-      [![https://getsocially.app](https://img.shields.io/website?label=getsocially.app&style=for-the-badge&url=https%3A%2F%2Fgetsocially.app)](https://getsocially.app)
   </div>
 </p>
+
+
+[![https://getsocially.app](https://img.shields.io/website?label=getsocially.app&style=for-the-badge&url=https%3A%2F%2Fgetsocially.app)](https://getsocially.app)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
