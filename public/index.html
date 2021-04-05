@@ -1,316 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Group all of your socials in one window.">
-    <meta name="author" content="Jack Humphries">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Group all of your socials in one window."
+		/>
+		<meta name="author" content="Jack Humphries" />
+		<link rel="shortcut icon" href="assets/ico/favicon.png" />
 
-    <title>Socially - Socially</title>
+		<title>Socially</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
-	<link href="/assets/css/main.css" rel="stylesheet">
-	<link href="/assets/css/all.css" rel="stylesheet"> <!--load all styles -->
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/smoothscroll.js"></script>
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
-	<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#1a2933">
-	<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#f1f1f1">
-	<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#1A2933">
-    
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/img/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/img/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/icons/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/assets/img/favicons/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/assets/img/favicons/safari-pinned-tab.svg"
+			color="#1a2933"
+		/>
+		<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#f1f1f1" />
+		<meta
+			name="msapplication-config"
+			content="/assets/img/favicons/browserconfig.xml"
+		/>
+		<meta name="theme-color" content="#1A2933" />
 
-  </head>
+		<style>
+			body {
+				position: relative;
+			}
+			.link {
+				text-decoration: none;
+				color: #17262b;
+			}
 
-  <body data-spy="scroll" data-offset="0" data-target="#navigation">
+			.the-blur {
+				background: rgba(
+					255,
+					255,
+					255,
+					0.2
+				) !important; /* Give transparent white background to navbar */
+				/* 0.2 to give little whitish effect. */
+				/* Put 0 to get complete transperency */
+				z-index: 2;
+				backdrop-filter: blur(10px) saturate(125%);
+				-webkit-backdrop-filter: blur(10px) saturate(125%);
+			}
+			@media only screen and (max-width: 400px) {
+				#home {
+					padding-top: 70px !important;
+				}
+			}
+		</style>
+	</head>
 
-    <!-- Fixed navbar -->
-	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          <a class="navbar-brand" href="#"><b>Socially</b></a>
-	        </div>
-	        <div class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
-	            <li class="active"><a href="#home" class="smothscroll">Home</a></li>
-	            <li><a href="#desc" class="smothscroll">Description</a></li>
-				<li><a href="#showcase" class="smothScroll">Showcase</a></li>
-				<li><a href="#download" class="smothScroll">Download</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
-	    </div>
-
-
-	<section id="home" name="home"></section>
-	<div id="headerwrap">
-	    <div class="container">
-	    	<div class="row centered">
-	    		<div class="col-lg-12">
-					<h1>Welcome To <b>Socially</b></h1>
-					<h3>Group all of your socials in one window.</h3>
-					<br>
-	    		</div>
-	    		
-	    		<div class="col-lg-2">
-	    			<h5>All your socials</h5>
-	    			<p>Stop using mulitple Chrome tabs, use Socially to simply organise all your socials.</p>
-	    			<img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow1.png">
-	    		</div>
-	    		<div class="col-lg-8">
-	    			<img class="img-responsive" src="assets/img/champnew.png" alt="" style="box-shadow: 5px 5px 22px -11px rgba(0,0,0,0.6);">
-	    		</div>
-	    		<div class="col-lg-2">
-					<br>
-	    			<img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow2.png">
-	    			<h5>Awesome Design</h5>
-	    			<p>A sleek and modern design packed with features to improve your productivity.</p>
-	    		</div>
-			</div>
-			<br>
-
-	    </div> <!--/ .container -->
-	</div><!--/ #headerwrap -->
-
-
-	<section id="desc" name="desc"></section>
-	<!-- INTRO WRAP -->
-	<div id="intro">
-		<div class="container">
-			<div class="row centered">
-				<h1>Designed To Excel</h1>
-				<br>
-				<br>
-				<div class="col-lg-4">
-					<i class="fas fa-comments" style="font-size: 15rem; color: #4bb504;"></i>
-					<h3>Social</h3>
-					<p>Be more social with all of your social apps in on place. No fuss.</p>
+	<body>
+		<nav
+			id="navbar"
+			class="navbar fixed-top d-flex justify-content-center py-3 border-bottom the-blur"
+		>
+			<ul class="nav nav-pills nav-pills-secondary">
+				<li class="nav-item">
+					<a href="#home" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#desc" class="nav-link">Description</a>
+				</li>
+				<li class="nav-item"><a href="#show" class="nav-link">Showcase</a></li>
+				<li class="nav-item">
+					<a href="#download" class="nav-link">Download</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="px-4 pt-5 my-5 text-center border-bottom" id="home">
+				<h1 class="display-4 fw-bold">Socially</h1>
+				<div class="col-lg-6 mx-auto">
+					<p class="lead mb-4">
+						Stop using mulitple Chrome tabs, use Socially to simply organise all
+						your socials. Socially has a sleek and modern design packed with
+						features to improve your productivity.
+					</p>
+					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+						<a href="#desc" class="btn btn-primary btn-lg px-4 me-sm-3">
+							See more
+						</a>
+						<a href="#download" class="btn btn-outline-secondary btn-lg px-4">
+							Download
+						</a>
+					</div>
 				</div>
-				<div class="col-lg-4">
-					<i class="fas fa-tachometer-alt" style="font-size: 15rem; color: #db3832;"></i>
-					<h3>Speed</h3>
-					<p>Access all of your socials with speed. No waiting for your web browser.</p>
-				</div>
-				<div class="col-lg-4">
-					<i class="fas fa-desktop" style="font-size: 15rem; color: #a1a1a1;"></i>
-					<h3>Productive</h3>
-					<p>Stop scrolling through social media. Use socially to go straight to your DM's.</p>
-				</div>
-			</div>
-			<br>
-			<hr>
-	    </div> <!--/ .container -->
-	</div><!--/ #introwrap -->
-	
-	<!-- FEATURES WRAP -->
-	<div id="features">
-		<div class="container">
-			<div class="row">
-				<h1 class="centered">What's New?</h1>
-				<br>
-				<br>
-				<div class="col-lg-6 centered">
-					<img class="centered img-responsive" src="assets/img/item-02.png" alt="" height="300">
-				</div>
-				
-				<div class="col-lg-6">
-					<h3>Some Features</h3>
-					<br>
-				<!-- ACCORDION -->
-		            <div class="accordion ac" id="accordion2">
-		                <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		                        First Class Design
-		                        </a>
-		                    </div><!-- /accordion-heading -->
-		                    <div id="collapseOne" class="accordion-body collapse in">
-		                        <div class="accordion-inner">
-								<p>Built from the ground up using <a style="font-size: 16px;" href="https://www.electronjs.org/">Electron</a>, HTML and CSS, Socially is engineered to be simple to use yet sleek and modern. All components have been handcrafted in to be simple and elegant without looking out of place.</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>
-		
-		                <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		                        Open Source
-		                        </a>
-		                    </div>
-		                    <div id="collapseTwo" class="accordion-body collapse">
-		                        <div class="accordion-inner">
-								<p>From the infrastructure code to the actual app code, every part of this application is open source. The amazing community can add new features and improve existing ones. You can check out the GitHub repository <a style="font-size: 16px;" href="https://github.com/JackHumphries9/socially">here</a>.</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>
-		
-		                 <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-		                        Feature packed
-		                        </a>
-		                    </div>
-		                    <div id="collapseThree" class="accordion-body collapse">
-		                        <div class="accordion-inner">
-								<p>With many included features and even more on the roadmap, Socially is packed with features to make your social life easier!</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>
-		                
-		                 <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-		                        Simple
-		                        </a>
-		                    </div>
-		                    <div id="collapseFour" class="accordion-body collapse">
-		                        <div class="accordion-inner">
-								<p>With a simple design, Socially does what is says on the tin. Just download the app, go through the installer and select which socials you use and you are good to go!</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>			
-					</div><!-- Accordion -->
-				</div>
-			</div>
-		</div><!--/ .container -->
-	</div><!--/ #features -->
-	
-	
-	<section id="showcase" name="showcase"></section>
-	<div id="showcase">
-		<div class="container">
-			<div class="row">
-				<h1 class="centered">Some Screenshots</h1>
-				<br>
-				<div class="col-lg-8 col-lg-offset-2">
-					<div id="carousel-example-generic" class="carousel slide">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					  </ol>
-					
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-					    <div class="item active">
-					      <img src="assets/img/item-01.png" alt="">
-					    </div>
-					    <div class="item">
-					      <img src="assets/img/item-02.png" alt="">
-					    </div>
-					  </div>
+				<div class="overflow-hidden">
+					<div class="container px-5">
+						<img
+							src="/assets/img/champnew.png"
+							class="img-fluid border rounded-3 shadow-lg mb-4"
+							alt="Example image"
+							loading="lazy"
+						/>
 					</div>
 				</div>
 			</div>
-			<br>
-			<br>
-			<br>	
-		</div><!-- /container -->
-	</div>	
+			<div class="container px-4 pt-5 my-5" id="desc">
+				<!-- Three columns of text below the carousel -->
+				<div class="row">
+					<div class="col-lg-4">
+						<img
+							class="mb-5"
+							src="/assets/img/icons/chat-dots.svg"
+							alt="Social"
+							width="120"
+							height="120"
+						/>
 
-	<section id="download" name="download"></section>
-	<div id="download" class="centered">
-		<div class="container">
-			<div class="row">
-				<br>
-				<h1 class="centered">Download</h1>
-				<p class="centered">To download Socially, click the download button below.</p>
-				<br/>
-				<div class="platform-btns centered">
-					<a class="btn btn-success" href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Windows-0.5.0.exe" target="_blank" id="winBtn" style="display: none;">Download for Windows&nbsp;<i class="fab fa-windows"></i></a>
-					<a class="btn btn-success" href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Mac-0.5.0.dmg" target="_blank" id="macBtn" style="display: none;">Download for Mac&nbsp;<i class="fab fa-apple"></i></a>
-					<a class="btn btn-success" href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Linux-0.5.0.zip" target="_blank" id="linuxBtn" style="display: none;">Download for Linux&nbsp;<i class="fab fa-linux"></i></a>
+						<h2>Social</h2>
+						<p>
+							Be more social with all of your social apps in on place. No fuss.
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img
+							class="mb-5"
+							src="/assets/img/icons/speedometer.svg"
+							alt="speed"
+							width="120"
+							height="120"
+						/>
+
+						<h2>Speed</h2>
+						<p>
+							Another exciting bit of representative placeholder content. This
+							time, we've moved on to the second column.
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img
+							class="mb-5"
+							src="/assets/img/icons/display.svg"
+							alt="productivity"
+							width="120"
+							height="120"
+						/>
+
+						<h2>Productive</h2>
+						<p>
+							Switching to your phone takes time. Use socially to go straight to
+							your DM's without being distracted.
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
 				</div>
-				<br>
-				<br>
-				<div class="accordion ac" id="accordionDownload">
-					<div class="accordion-group">
-							<a class="accordion-toggle centered" data-toggle="collapse" data-parent="#accordionDownload" href="#collapseDownload" style="font-size: 2rem; text-align: center;">
-							Other platform? 
-							</a>
-							<br>
-						<div id="collapseDownload" class="accordion-body collapse">
-							<div class="accordion-inner">
-								<div class="row centered">
-									<div class="col-lg-4" style="padding-bottom: 10px; padding-top: 10px;">
-										<a class="btn btn-success" href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Windows-0.5.0.exe" target="_blank">Download for Windows&nbsp;<i class="fab fa-windows"></i></a>
+				<!-- /.row -->
+			</div>
+			<div class="container px-4 pt-5 my-5">
+				<div class="row">
+					<div class="col-md-5 order-md-1 py-3">
+						<img src="/assets/img/mockup1.png" class="img img-fluid" />
+					</div>
+					<div class="col-md-7 order-md-2">
+						<h2 class="featurette-heading">
+							Welcome to a new kind of messaging.
+							<span class="text-muted">See for yourself.</span>
+						</h2>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button
+										class="accordion-button"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseOne"
+										aria-expanded="true"
+										aria-controls="collapseOne"
+									>
+										First Class Design
+									</button>
+								</h2>
+								<div
+									id="collapseOne"
+									class="accordion-collapse collapse show"
+									aria-labelledby="headingOne"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										<p>
+											Built from the ground up using
+											<a class="link" href="https://www.electronjs.org/"
+												>Electron</a
+											>, HTML and CSS, Socially is engineered to be simple to
+											use yet sleek and modern. All components have been
+											handcrafted in to be simple and elegant without looking
+											out of place.
+										</p>
 									</div>
-									<div class="col-lg-4" style="padding-bottom: 10px; padding-top: 10px;">
-										<a class="btn btn-success" href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Mac-0.5.0.dmg" target="_blank">Download for Mac&nbsp;<i class="fab fa-apple"></i></a>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo"
+										aria-expanded="false"
+										aria-controls="collapseTwo"
+									>
+										Open Source
+									</button>
+								</h2>
+								<div
+									id="collapseTwo"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										<p>
+											From the infrastructure code to the actual app code, every
+											part of this application is open source. The amazing
+											community can add new features and improve existing ones.
+											You can check out the GitHub repository
+											<a
+												class="link"
+												href="https://github.com/JackHumphries9/socially"
+												>here</a
+											>.
+										</p>
 									</div>
-									<div class="col-lg-4" style="padding-bottom: 10px; padding-top: 10px;">
-										<a class="btn btn-success" href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Linux-0.5.0.zip" target="_blank">Download for Linux&nbsp;<i class="fab fa-linux"></i></a>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseThree"
+										aria-expanded="false"
+										aria-controls="collapseThree"
+									>
+										Feature Packed
+									</button>
+								</h2>
+								<div
+									id="collapseThree"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingThree"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										<p>
+											With many included features and even more on the roadmap,
+											Socially is packed with features to make your social life
+											easier!
+										</p>
 									</div>
-								</div>							
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFour">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseFour"
+										aria-expanded="false"
+										aria-controls="collapseFour"
+									>
+										Simple
+									</button>
+								</h2>
+								<div
+									id="collapseFour"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingFour"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										<p>
+											With a simple design, Socially does what is says on the
+											tin. Just download the app, go through the installer and
+											select which socials you use and you are good to go!
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<br>
-				<div class="centered">
-					<h2 class="centered">Source code</h2>
-					<p class="centered">If you would like to download the source code for this project, you can visit the GitHub repository by clicking the button below.</p>
-					<a class="btn centered" href="https://github.com/JackHumphries9/Socially/" target="_blank" style="background-color: #24292e; color: #FFFFFF">Go to Github&nbsp;<i class="fab fa-github"></i></a>
+			</div>
+			<div class="container px-4 pt-5 my-5" id="show">
+				<div
+					id="carouselExampleDark"
+					class="carousel carousel-dark slide"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="10000">
+							<img
+								src="/assets/img/mockup1.png"
+								class="d-block w-100"
+								alt="..."
+							/>
+							<div class="carousel-caption d-none d-md-block"></div>
+						</div>
+						<div class="carousel-item" data-bs-interval="2000">
+							<img
+								src="/assets/img/mockup2.png"
+								class="d-block w-100"
+								alt="..."
+							/>
+							<div class="carousel-caption d-none d-md-block"></div>
+						</div>
+						<div class="carousel-item" data-bs-interval="2000">
+							<img
+								src="/assets/img/mockup3.png"
+								class="d-block w-100"
+								alt="..."
+							/>
+							<div class="carousel-caption d-none d-md-block"></div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleDark"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleDark"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-			<br>
-			<br>
-			<br>	
-		</div><!-- /container -->
-	</div>
-	<div id="c">
-		<div class="container">
-			<p>Handcrafted by <a href="https://www.jackhumphries.co.uk">Jack Humphries</a></p>
-		
-		</div>
-	</div>
+			</div>
+			<div class="px-4 pt-5 my-5 text-center" id="download">
+				<h1 class="display-4 fw-bold">Download</h1>
+				<div class="col-lg-6 mx-auto">
+					<p class="lead mb-4">
+						Download Socially today to see how it can improve your social
+						experience.
+					</p>
+					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+						<a
+							id="winBtn"
+							href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Windows-0.5.0.exe"
+							class="btn btn-primary btn-lg px-4 me-sm-3"
+							style="display: none"
+							>Download for Windows
+							<img
+								src="/assets/img/icons/windows-brands.svg"
+								alt="Social"
+								width="16"
+								height="16"
+						/></a>
+						<a
+							id="macBtn"
+							href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Mac-0.5.0.dmg"
+							class="btn btn-primary btn-lg px-4 me-sm-3"
+							style="display: none"
+							>Download for Mac
+							<img
+								src="/assets/img/icons/apple-brands.svg"
+								alt="Social"
+								width="16"
+								height="16"
+						/></a>
+						<a
+							id="linuxBtn"
+							href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Linux-0.5.0.zip"
+							class="btn btn-primary btn-lg px-4 me-sm-3"
+							style="display: none"
+							>Download for Linux
+							<img
+								src="/assets/img/icons/linux-brands.svg"
+								alt="Social"
+								width="16"
+								height="16"
+						/></a>
+					</div>
+					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+						<button
+							class="btn btn-outline-primary dropdown-toggle px-4 me-sm-3"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseExample"
+							aria-expanded="false"
+							aria-controls="collapseExample"
+						>
+							Download for Other Platforms
+						</button>
+					</div>
+					<div class="collapse" id="collapseExample">
+						<div class="row">
+							<div class="col-md-4 mb-3">
+								<a
+									href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Windows-0.5.0.exe"
+									class="btn btn-primary"
+									>Download for Windows
+									<img
+										src="/assets/img/icons/windows-brands.svg"
+										alt="Social"
+										width="16"
+										height="16"
+								/></a>
+							</div>
+							<div class="col-md-4 mb-3">
+								<a
+									href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Mac-0.5.0.dmg"
+									class="btn btn-primary"
+									>Download for Mac
+									<img
+										src="/assets/img/icons/apple-brands.svg"
+										alt="Social"
+										width="16"
+										height="16"
+								/></a>
+							</div>
+							<div class="col-md-4">
+								<a
+									href="https://github.com/JackHumphries9/Socially/releases/download/V0.5/Socially-Linux-0.5.0.zip"
+									class="btn btn-primary"
+									>Download for Linux
+									<img
+										src="/assets/img/icons/linux-brands.svg"
+										alt="Social"
+										width="16"
+										height="16"
+								/></a>
+							</div>
+						</div>
+					</div>
+					<p class="lead mb-4 mt-3">
+						Want to contribute to Socially? Visit the GitHub repository to find
+						out more!
+					</p>
+					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+						<a
+							class="btn btn-dark px-4 me-sm-3"
+							href="https://github.com/JackHumphries9/Socially/"
+						>
+							View on GitHub
+							<img
+								src="/assets/img/icons/github-brands.svg"
+								alt="Social"
+								width="16"
+								height="16"
+							/>
+						</a>
+					</div>
+				</div>
+				<!-- <div class="overflow-hidden">
+						<div class="container px-5">
+							<img
+								src="/assets/img/champnew.png"
+								class="img-fluid border rounded-3 shadow-lg mb-4"
+								alt="Example image"
+								loading="lazy"
+							/>
+						</div>
+					</div> -->
+			</div>
+		</main>
+		<footer class="footer mt-auto py-3 bg-light border-top">
+			<div class="container">
+				<span class="text-muted"
+					>&copy; 2021
+					<a href="https://jackhumphries.co.uk" class="link"
+						>Jack Humphries</a
+					></span
+				>
+			</div>
+		</footer>
+	</body>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
+	<script src="/assets/js/bootstrap.bundle.min.js" defer></script>
 	<script>
-	$('.carousel').carousel({
-	  interval: 3500
-	})
+		var winBtn = document.getElementById("winBtn");
+		var macBtn = document.getElementById("macBtn");
+		var linuxBtn = document.getElementById("linuxBtn");
+		if (navigator.appVersion.indexOf("Win") != -1) {
+			winBtn.style = "";
+		}
 
-	var winBtn = document.getElementById("winBtn");
-	var macBtn = document.getElementById("macBtn");
-	var linuxBtn = document.getElementById("linuxBtn");
-	if (navigator.appVersion.indexOf("Win") != -1) {
-		winBtn.style = "";
-	}
+		if (navigator.appVersion.indexOf("Mac") != -1) {
+			macBtn.style = "";
+		}
 
-	if (navigator.appVersion.indexOf("Mac") != -1) {
-		macBtn.style = "";
-	}
-
-	if (navigator.appVersion.indexOf("Linux") != -1) {
-		linuxBtn.style = "";
-	}
-
+		if (navigator.appVersion.indexOf("Linux") != -1) {
+			linuxBtn.style = "";
+		}
 	</script>
-  </body>
 </html>
