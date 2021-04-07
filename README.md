@@ -18,6 +18,8 @@
 
 <!-- ABOUT THE PROJECT -->
 
+<img src="/screenshot.png" />
+
 ## About The Project
 
 This is the entire source code for the website [getsocially.app](https://getsocially.app). This site is deployed serverlessly using [Vercel](https://vercel.com). When a change is pushed to this repository, Vercel will redeploy the website.
