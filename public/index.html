@@ -124,7 +124,12 @@
 		</style>
 	</head>
 
-	<body>
+	<body
+		data-bs-spy="scroll"
+		data-bs-target="#navbar"
+		data-bs-offset="0"
+		tabindex="0"
+	>
 		<nav
 			id="navbar"
 			class="
@@ -151,30 +156,32 @@
 			</ul>
 		</nav>
 		<main>
-			<div class="px-4 pt-5 my-5 text-center border-bottom" id="home">
-				<h1 class="display-4 fw-bold">Socially</h1>
-				<div class="col-lg-6 mx-auto">
-					<p class="lead mb-4">
-						Stop using multiple Chrome tabs, use Socially to simply organise all
-						your socials. Socially has a sleek and modern design packed with
-						features to improve your productivity.
-					</p>
-					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-						<a href="#desc" class="btn btn-primary btn-lg px-4 me-sm-3">
-							See more
-						</a>
-						<a href="#download" class="btn btn-outline-secondary btn-lg px-4">
-							Download
-						</a>
+			<div id="home">
+				<div class="px-4 pt-5 my-5 text-center border-bottom">
+					<h1 class="display-4 fw-bold">Socially</h1>
+					<div class="col-lg-6 mx-auto">
+						<p class="lead mb-4">
+							Stop using multiple Chrome tabs, use Socially to simply organise
+							all your socials. Socially has a sleek and modern design packed
+							with features to improve your productivity.
+						</p>
+						<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+							<a href="#desc" class="btn btn-primary btn-lg px-4 me-sm-3">
+								See more
+							</a>
+							<a href="#download" class="btn btn-outline-secondary btn-lg px-4">
+								Download
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="overflow-hidden">
-					<div class="container px-5 hero-img">
-						<img
-							src="/assets/img/champnew.png"
-							class="img-fluid border rounded-3 shadow-lg mb-4"
-							alt="Example image"
-						/>
+					<div class="overflow-hidden">
+						<div class="container px-5 hero-img">
+							<img
+								src="/assets/img/champnew.png"
+								class="img-fluid border rounded-3 shadow-lg mb-4"
+								alt="Example image"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
